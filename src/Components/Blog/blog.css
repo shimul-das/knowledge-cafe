@@ -1,16 +1,17 @@
 .product {
-    width: 300px;
-    height: 510px;
+    width: 800px;
+    height: 750px;
     border: 1px solid gray;
     border-radius: 8px;
     position: relative;
 }
 
 .product img {
-    height: 286px;
-    width: 286px;
-    margin: 7px;
+    height: 300px;
+    width: 100%;
+    margin: auto;
     border-radius: 8px;
+    text-align: center;
 }
 
 .product-name {
@@ -67,3 +68,42 @@
     background-color: orange;
 
 }
+
+/* Author css */
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* .author-text {
+    margin-left: 20px;
+  } */
+  
+  .author-text h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .date {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .icon {
+    margin-left: 20px;
+  }
+  
+  .icon img {
+    height: 30px;
+  }
+  
+  .author-text{
+    display: flex;
+  }
+  .authimage img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
