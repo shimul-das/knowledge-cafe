@@ -1,6 +1,6 @@
 .header{
     height: 80px;
-    background-color: #1C2B35;
+    background-color: white;
     display:flex;
     justify-content: space-between;
     padding-left: 100px;
@@ -9,10 +9,10 @@
 }
 .h_link a{
     text-decoration: none;
-    color: white;
+    color: black;
     margin-left: 30px;
 
 }
 .h_link a:hover{
-    color: antiquewhite;
+    color: aqua;
 }
