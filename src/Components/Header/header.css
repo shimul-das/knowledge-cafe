@@ -3,8 +3,8 @@
     background-color: white;
     display:flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
     align-items: center;
 }
 .h_link a{

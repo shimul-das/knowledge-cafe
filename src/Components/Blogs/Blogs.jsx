@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
 import Counter from '../Counter/Counter';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import Counter from '../Bookmark/Bookmark';
 import './blogs.css'
 const Blogs = () => {
@@ -21,8 +23,15 @@ const passDataCounter=(blog)=>{
 }
 const passDataBookmark=(blog)=>{
     // console.log(blog);
-    const newbookmark=[...bookmark, blog]
-    setbookmark(newbookmark);
+    // const newbookmark=[...bookmark, blog]
+    // setbookmark(newbookmark);
+    if (bookmark.find((bookmark) => bookmark.id === blog.id)) {
+        toast.success('ID is present in bookmarks!');
+      } else {
+        toast.error('ID is not present in bookmarks.');
+        const newbookmark=[...bookmark, blog]
+        setbookmark(newbookmark);
+      }
 }
 return (
 <div className='shopContainer'>
@@ -39,6 +48,7 @@ return (
             <h3 className='bookmark-title'>Bookmarked Blogs : {bookmark.length}</h3>
             <div> {bookmark.map(book=><Bookmark book={book}></Bookmark>)}</div>
         </div>
+        <ToastContainer />
         
        
         {/* <Bookmark counter={counter}></Bookmark> */}

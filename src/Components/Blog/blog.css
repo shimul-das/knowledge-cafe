@@ -4,6 +4,7 @@
     border: 1px solid gray;
     border-radius: 8px;
     position: relative;
+    margin-top: 50px;
 }
 
 .product img {
@@ -166,7 +167,7 @@
 for mobile responsive */
 @media (max-width: 480px) {
     .product {
-        width: 400px;
+        width: 350px;
         height: 750px;
         border: 1px solid gray;
         border-radius: 8px;
@@ -175,7 +176,7 @@ for mobile responsive */
     .blog-title {
         font-family: 'Exo 2';
         font-style: normal;
-        font-weight: 300;
+        font-weight: 320;
         font-size: 25px;
         line-height: 160%;
         margin-left: 10px;
