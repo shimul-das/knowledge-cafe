@@ -185,4 +185,8 @@ for mobile responsive */
     
         color: #111111;
     }
+    .author-text h2 {
+        font-size: 14px;
+        margin: 0;
+    }
   }

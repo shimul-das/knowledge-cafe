@@ -6,6 +6,7 @@
     /* padding-left: 50px; */
     /* padding-right: 50px; */
     align-items: center;
+    border-bottom: 1px solid #ccc; 
 }
 .h_link a{
     text-decoration: none;

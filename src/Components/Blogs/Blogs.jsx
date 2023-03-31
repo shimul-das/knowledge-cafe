@@ -26,9 +26,9 @@ const passDataBookmark=(blog)=>{
     // const newbookmark=[...bookmark, blog]
     // setbookmark(newbookmark);
     if (bookmark.find((bookmark) => bookmark.id === blog.id)) {
-        toast.success('ID is present in bookmarks!');
+        toast.error('This post already bookmarked!');
       } else {
-        toast.error('ID is not present in bookmarks.');
+        toast.success('Bookmark added successfully...');
         const newbookmark=[...bookmark, blog]
         setbookmark(newbookmark);
       }

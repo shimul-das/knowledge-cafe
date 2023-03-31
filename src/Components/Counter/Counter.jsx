@@ -17,7 +17,7 @@ const Counter = (props) => {
     }
   return (
     <div>
-        <h2 className='counter'>Spent time on read : {read_Time}</h2>
+        <h2 className='counter'>Spent time on read : {read_Time} min</h2>
     </div>
   )
 }
