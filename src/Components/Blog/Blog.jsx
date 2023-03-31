@@ -4,9 +4,13 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './blog.css'
 
 const Blog = (props) => {
-const {authorName,blogTitle,blogCoverImage,authorImage,readTime,publishDate} =props.product;
+    console.log(props)
+const {authorName,blogTitle,blogCoverImage,authorImage,readTime,publishDate} =props.blog;
+const passDataCounter=props.passDataCounter;
+//const passDataCounter=props.passDataCounter; 
 // const handleAddtoCart=props.handleAddtoCart
-console.log(props)
+//console.log(props)
+
 
 return (
 <div className='product'>
@@ -19,17 +23,17 @@ return (
                 </div>
             <div>
             <h2>{authorName}</h2>
-                <p class="date">{publishDate} <span>(4 Days ago)</span></p>
+                <p className="date">{publishDate} <span>(4 Days ago)</span></p>
             </div>
                 
             </div>
-            <div class="icon">
+            <div className="icon">
             <p>{readTime} min read<button className='bookmark-btn' onClick={()=>handleAddtoCart(props.product)} ><FontAwesomeIcon icon={ faBookmark} /></button></p>
             </div>
         </div>
         <h2 className='blog-title'>{blogTitle}</h2>
         <p className='post-tagline'>#beginners #programming</p>
-        <a className='mark-as-read' href="">Mark as read</a>
+        <a onClick={()=>passDataCounter(props.blog)} className='mark-as-read' href="">Mark as read</a>
 
 
         {/* <h5 className='product-name'>{name}</h5>
