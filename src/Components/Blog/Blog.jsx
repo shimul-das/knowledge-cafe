@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './blog.css'
 
 const Blog = (props) => {
@@ -18,15 +18,18 @@ return (
                 <img src={authorImage} alt="Author Image"></img>
                 </div>
             <div>
-            <h2>John Doe</h2>
-                <p class="date">March 31, 2023 <span>(4 Days ago)</span></p>
+            <h2>{authorName}</h2>
+                <p class="date">{publishDate} <span>(4 Days ago)</span></p>
             </div>
                 
             </div>
             <div class="icon">
-                <img src="icon-image.jpg" alt="Icon"></img>
+            <p>{readTime} min read<button className='bookmark-btn' onClick={()=>handleAddtoCart(props.product)} ><FontAwesomeIcon icon={ faBookmark} /></button></p>
             </div>
         </div>
+        <h2 className='blog-title'>{blogTitle}</h2>
+        <p className='post-tagline'>#beginners #programming</p>
+        <a className='mark-as-read' href="">Mark as read</a>
 
 
         {/* <h5 className='product-name'>{name}</h5>

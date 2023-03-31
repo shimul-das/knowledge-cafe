@@ -4,6 +4,7 @@
 }
 .productContainer{
     margin: 50px;
+    background-color: antiquewhite;
     display: grid;
     /* grid-template-columns: repeat(1,3fr); */
     grid-template-columns:5fr;

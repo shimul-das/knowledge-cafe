@@ -3,8 +3,8 @@
     background-color: white;
     display:flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     align-items: center;
 }
 .h_link a{
@@ -15,4 +15,10 @@
 }
 .h_link a:hover{
     color: aqua;
+}
+
+.h_link img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
