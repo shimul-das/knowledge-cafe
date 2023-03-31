@@ -162,3 +162,26 @@
     margin-left: 10px;
 
 }
+/* 
+for mobile responsive */
+@media (max-width: 480px) {
+    .product {
+        width: 400px;
+        height: 750px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        position: relative;
+    }
+    .blog-title {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 160%;
+        margin-left: 10px;
+        /* or 64px */
+    
+    
+        color: #111111;
+    }
+  }

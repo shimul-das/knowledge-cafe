@@ -36,8 +36,8 @@ return (
         {/* <p>Summary:{counter.length}</p> */}
         <Counter counter={counter}></Counter>
         <div className='bookmark_container'>
-            <h3>Bookmarked Blogs : {bookmark.length}</h3>
-            <div> {bookmark.map(book=><Bookmark counter={counter}></Bookmark>)}</div>
+            <h3 className='bookmark-title'>Bookmarked Blogs : {bookmark.length}</h3>
+            <div> {bookmark.map(book=><Bookmark book={book}></Bookmark>)}</div>
         </div>
         
        

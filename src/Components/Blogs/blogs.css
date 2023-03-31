@@ -1,16 +1,37 @@
-.shopContainer{
+.shopContainer {
     display: grid;
-    grid-template-columns:3fr 2fr;
+    grid-template-columns: 3fr 2fr;
 }
-.productContainer{
+
+.productContainer {
     margin: 50px;
     background-color: antiquewhite;
     display: grid;
     /* grid-template-columns: repeat(1,3fr); */
-    grid-template-columns:5fr;
+    grid-template-columns: 5fr;
     gap: 40px;
 }
 
-.bookmark_container{
-background-color:rgba(17, 17, 17, 0.05);;
+.bookmark_container {
+    background: rgba(17, 17, 17, 0.05);
+    padding: 10px;
 }
+
+.bookmark-title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+
+
+    color: #111111;
+
+}
+
+@media (max-width: 480px) {
+    .shopContainer {
+     display: block;
+    }
+  }

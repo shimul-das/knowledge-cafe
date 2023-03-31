@@ -3,10 +3,10 @@ import React from 'react'
 import './bookmark.css'
 
 const Bookmark = (props) => {
+    const bookmark=props.book;
   return (
-    <div className='bookmark'>
-        
-        <p>Master Microsoft Power Platform and Become an In-Demand!</p>
+    <div className='bookmark'> 
+        <p>{bookmark.blogTitle}</p>
     </div>
   )
 }
