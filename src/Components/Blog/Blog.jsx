@@ -7,6 +7,7 @@ const Blog = (props) => {
     console.log(props)
 const {authorName,blogTitle,blogCoverImage,authorImage,readTime,publishDate} =props.blog;
 const passDataCounter=props.passDataCounter;
+const passDataBookmark=props.passDataBookmark;
 //const passDataCounter=props.passDataCounter; 
 // const handleAddtoCart=props.handleAddtoCart
 //console.log(props)
@@ -28,7 +29,7 @@ return (
                 
             </div>
             <div className="icon">
-            <p>{readTime} min read<button className='bookmark-btn' onClick={()=>handleAddtoCart(props.product)} ><FontAwesomeIcon icon={ faBookmark} /></button></p>
+            <p>{readTime} min read<button className='bookmark-btn' onClick={()=>passDataBookmark(props.blog)} ><FontAwesomeIcon icon={ faBookmark} /></button></p>
             </div>
         </div>
         <h2 className='blog-title'>{blogTitle}</h2>

@@ -10,3 +10,7 @@
     grid-template-columns:5fr;
     gap: 40px;
 }
+
+.bookmark_container{
+background-color:rgba(17, 17, 17, 0.05);;
+}
